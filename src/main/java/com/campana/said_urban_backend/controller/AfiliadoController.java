@@ -95,7 +95,7 @@ public class AfiliadoController {
 
             // Creamos el link a la foto (esto es lo que más le servirá a Said)
             String nombreFoto = a.getFotoIneUrl().substring(a.getFotoIneUrl().lastIndexOf("/") + 1);
-            String urlPublica = "http://localhost:8080/" + nombreFoto;
+            String urlPublica = "http://localhost:8080/uploads/ines/" + nombreFoto;
             row.createCell(4).setCellValue(urlPublica);
 
             row.createCell(5).setCellValue(a.getFechaRegistro().toString());
